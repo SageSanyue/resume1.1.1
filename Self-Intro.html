@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>徐赛君的个人简历</title>
+    <script src="https://at.alicdn.com/t/font_571244_exeobslx9gvz33di.js"></script>
+    <link rel="stylesheet" href="styles/Self-Intro.css">
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="topNavBar" >
+        <div class="topNavBar-inner  clearfix">
+            <a  class="logo" href="#" alt="logo">
+                    <span class="rs">RS</span><span class="card">card</span>
+           </a>    
+           <nav>
+           <ul class="clearfix">
+               <li><a href="#">关于</a></li>
+               <li><a href="#">技能</a></li>
+               <li><a href="#">作品</a></li>
+               <li><a href="#">博客</a></li>
+               <li><a href="#">日历</a></li>
+               <li><a href="#">联系方式</a></li>
+               <li><a href="#">其他</a></li>
+           </ul>
+           </nav>  
+        </div>
+    </div>
+    <div class="banner">
+        <div class="mask">
+        </div>
+    </div>
+    <main>
+            <div class="userCard">
+                <div class="pictureAndText clearfix">
+                  <div class="picture">
+                    <img src="Resume/white.jpg" width=299 height=347 alt="头像">
+                  </div>
+                  <div class="text clearfix">
+                     <span class="welcome">Hello
+                            <span class="triangle"></span>
+                     </span>
+                     
+                     <h1>徐赛君</h1>
+                     <p>前端开发工程师</p>
+                     <hr>
+                      <dl>
+                       <dt>年龄</dt>
+                       <dd>24</dd>
+                       <dt>所在城市</dt>
+                       <dd>北京</dd>
+                       <dt>邮箱</dt>
+                       <dd>18844544787@163.com</dd>
+                       <dt>手机</dt>
+                       <dd>18844544787</dd>
+                      </dl>
+                  </div>
+                </div>
+                 <footer class="media">
+                  <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg></a>
+                  <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu0"></use>
+                    </svg></a>
+                  <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg></a>
+                  <a href="#"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg></a>
+                  </footer>
+            </div>
+            <p class="downloadResume-wrapper">
+                  <a class="downloadResume" href="./resume.pdf"  target="_blank" download>下载 PDF 简历</a>
+            </p>
+            <p class="selfIntroduction">徐赛君， 前端开发工程师，2017年7月毕业于吉林大学-通信工程学院-自动化专业，工学学士。
+                    <br><span>相关证书：大学英语六级CET-6、计算机等级考试C语言程序二级（NCRE Grade 2）。</span>
+                    <br><span>技能：前端开发，Rails 开发，Node.js 开发</span>
+            </p>
+    </main>
+          <section class="skills">
+              <h2>技能</h2>
+              <ol class="clearfix">
+                  <li>
+                      <h3>HTML 5 &amp; CSS 3</h3>
+                      <div class="progressBar">
+                          <div class="progress"></div>
+                      </div>
+                  </li>
+                  <li>
+                      <h3>JavaScript</h3>
+                      <div class="progressBar">
+                            <div class="progress"></div>
+                      </div>
+                  </li>
+                  <li>
+                      <h3>jQuery</h3>
+                      <div class="progressBar">
+                            <div class="progress"></div>
+                      </div>
+                  </li>
+                  <li>
+                      <h3>Vue.js</h3>
+                      <div class="progressBar">
+                            <div class="progress"></div>
+                      </div>
+                  </li>
+                  <li>
+                      <h3>React.js</h3>
+                      <div class="progressBar">
+                            <div class="progress"></div>
+                      </div>
+                  </li>
+                  <li>
+                      <h3>Node.js</h3>
+                      <div class="progressBar">
+                            <div class="progress"></div>
+                      </div>
+                  </li>
+              </ol>
+          </section>
+          <section class="portfolio">
+            <h2>作品集</h2>
+            <nav>
+              <ol class="clearfix">
+                  <li id="portfolioAll">所有</li>
+                  <li id="portfolioFramework">框架</li>
+                  <li id="portfolioVallina">原生JS &amp; CSS</li>
+              </ol>
+              <div id="portfolioBar" class="bar state-1">
+                    <div class="bar-inner"></div>
+              </div>
+            </nav>
+            <script>
+                    portfolioAll.onclick= function(){
+                        portfolioBar.className = 'bar state-1'
+                    }
+                    portfolioFramework.onclick= function(){
+                        portfolioBar.className = 'bar state-2'
+                    }
+                    portfolioVallina.onclick= function(){
+                        portfolioBar.className = 'bar state-3'
+                    }
+            </script>
+            <div class="works">
+                <div class="big">
+                    <img src="Resume/big.jpg" alt="作品1">
+                </div> 
+                <div class="small">
+                    <img src="Resume/small.jpg" alt="作品2">
+                </div>
+                <div class="smaller">
+                    <img src="Resume/small2.jpg" alt="作品3">
+                </div>
+            </div>
+          </section>
+</body>
+</html>
