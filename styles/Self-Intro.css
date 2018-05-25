@@ -183,7 +183,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .banner {
     height: 515px;
-    background-image:url(../Resume/rs-cover.jpg);
+    background-image:url(../Resume/rs-cover.jpg);/*本css文件的父容器和该图片的父容器是同级关系，故要用..*/
     background-position: center center;
     background-size: cover;
 }
