@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>徐赛君的个人简历</title>
     <script src="https://at.alicdn.com/t/font_571244_exeobslx9gvz33di.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
     <link rel="stylesheet" href="styles/Self-Intro.css">
     <style type="text/css">
         .icon {
@@ -106,6 +107,7 @@
         </div>
     </div>
     <main>
+        
             <div data-x id="siteAbout" class="userCard">
                 <div class="pictureAndText clearfix">
                   <div class="picture">
@@ -119,7 +121,7 @@
                      <h1>徐赛君</h1>
                      <p>前端开发工程师</p>
                      <hr>
-                      <dl>
+                      <dl class="clearfix">
                        <dt>年龄</dt>
                        <dd>24</dd>
                        <dt>所在城市</dt>
@@ -197,42 +199,50 @@
           </section>
           <section data-x id="siteWorks" class="portfolio">
             <h2>作品集</h2>
-            <nav>
-              <ol class="clearfix">
-                  <li id="portfolioAll">所有</li>
-                  <li id="portfolioFramework">框架</li>
-                  <li id="portfolioVallina">原生JS &amp; CSS</li>
-              </ol>
-              <div id="portfolioBar" class="bar state-1">
-                    <div class="bar-inner"></div>
+            <!--变成轮播-->
+           
+            <!-- Slider main container -->
+            <div class="swiper-container">
+            <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+               <!-- Slides -->
+                <img src="Resume/music.jpg" class="swiper-slide">
+                <img src="Resume/movie.jpg" class="swiper-slide">
+                <img src="Resume/canvas.jpg" class="swiper-slide">
+                
               </div>
-            </nav>
-            <script>
-                    portfolioAll.onclick= function(){
-                        portfolioBar.className = 'bar state-1'
-                    }
-                    portfolioFramework.onclick= function(){
-                        portfolioBar.className = 'bar state-2'
-                    }
-                    portfolioVallina.onclick= function(){
-                        portfolioBar.className = 'bar state-3'
-                    }
-            </script>
-            <div class="works">
-                <div class="big">
-                    <img src="Resume/big.jpg" alt="作品1">
-                </div> 
-                <div class="small">
-                    <img src="Resume/small.jpg" alt="作品2">
-                </div>
-                <div class="smaller">
-                    <img src="Resume/small2.jpg" alt="作品3">
-                </div>
+              <!-- If we need pagination -->
+             
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              
             </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
           </section>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
-          <script> 
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+          <script>
             
+            var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+
+             // Navigation arrows
+             navigation: {
+             nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+            }
+            })
+          </script>
+          <script> 
              setTimeout(function(){
                 siteWelcome.classList.remove('active')
              },1000)
@@ -277,44 +287,6 @@
                 }
                 li.classList.add('highlight')
              }
-
-             /*window.onscroll = function(x){
-                if(window.scrollY > 0){
-                    topNavBar.classList.add('sticky')
-                }else{
-                    topNavBar.classList.remove('sticky')
-                }
-                //console.log('window.scrollY')
-                //console.log(window.scrollY)
-                let specialTags = document.querySelectorAll('[data-x]')  //含有data-x属性的任意标签
-                let minIndex = 0
-                for(let i=0;i<specialTags.length;i++){
-                    if(Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)){
-                        minIndex = i
-                    }
-                    //console.log(minIndex)
-                }//minIndex就是离窗口顶部最近的元素
-              //specialTags[minIndex].classList.add('animate')
-                specialTags[minIndex].classList.remove('offset')
-               /* for(let i=0;i<specialTags.length;i++){
-                    specialTags[i].classList.remove('active')
-                }
-                //specialTags[minIndex].classList.add('active')
-                let id = specialTags[minIndex].id
-                //console.log(id)
-                let a = document.querySelector('a[href="#' + id + '"]')  //例如id=='siteAbout',则对应的a标签'a[href="#siteAbout"]'
-                let li = a.parentNode
-                //console.log(li)
-                let brothersAndMe = li.parentNode.children
-                for(let i=0;i<brothersAndMe.length;i++){
-                    //brothersAndMe[i].classList.remove('active')
-                    brothersAndMe[i].classList.remove('highlight')
-                }
-                //li.classList.add('active')
-                li.classList.add('highlight')
-             }
-             */
-
              
 
              let liTags = document.querySelectorAll('nav.menu > ul >li')
@@ -367,68 +339,9 @@
                     })
                     .start();
 
-/*
-                   let n = 25 //一共动的次数
-                   let duration = 500 / n      //动一次多长时间
-                   let currentTop = window.scrollY
-                   let targetTop = top-80
-                   let distance = (targetTop - currentTop)/n
-                   let i = 0
-                   /*
-                   console.log(targetTop)
-                   console.log(currentTop)  //console.log调试大法
-                   console.log(n)
-                   console.log(distance)
-                   
-                   var id = setInterval(()=>{
-                    if(i === n){
-                        window.clearInterval(id)
-                        return
-                    }
-                    i=i+1
-                    window.scrollTo(0,currentTop + distance * i)
-                    //window.scrollTo(0,targetTop + distance*i)
-                   },duration)
 
-                   //window.scrollTo(0,top-80)   //滑动到X方向不变Y方向减去80
-*/
                 }
              }  
-
-
            </script>
-           <!--<script>
-           //let aTags = document.getElementsByClassName('menuTrigger') 为改进BUG改进鼠标移开无法进一步点选二级菜单，监听对象应该是a与ul的共同标签li
-           let liTags = document.getElementsByClassName('menuTrigger')
-             //console.log(aTags)
-             //for(let i=0;i<aTags.length;i++){
-            for(let i=0;i<liTags.length;i++){
-                 //aTags[i].onmouseenter = function(x){
-                liTags[i].onmouseenter = function(x){
-                     //console.log('mouseenter')
-                     /*console.log(x.target)
-                     console.log(x.currentTarget)  //假如a标签内还有span标签，onclick事件监听上句打印span此句打印a
-                     */
-                     //let a = x.currentTarget   //建议使用curenttarget不会出错 
-                    let li = x.currentTarget
-                     //console.log(a.nextSibling.nextSibling)
-                     //let brother = a.nextSibling
-                     let brother = li.getElementsByTagName('ul')[0]
-                     /*while(brother.nodeType === 3){    //找a的节点弟弟而非文本弟弟,或者改写成while(brother.tagName!=='UL')
-                        brother = brother.nextSibling
-                     }
-                     brother.classList.add('active')
-                 }
-                 //aTags[i].onmouseleave = function(x){
-                liTags[i].onmouseleave = function(x){
-                    let li = x.currentTarget
-                    let brother = li.getElementsByTagName('ul')[0]
-                    //while(brother.tagName !== 'UL'){
-                    //   brother = brother.nextSibling
-                    //}
-                    brother.classList.remove('active')
-                 }
-             }
-           </script>-->
 </body>
 </html>

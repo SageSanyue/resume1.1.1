@@ -240,6 +240,7 @@ h1,h2,h3,h4,h5,h6 {
 .userCard .text dl dd,
 .userCard .text dl dt {
     float: left;
+    line-height: 2em;    /*不加行高则表格两栏会错位！*/
     padding: 5px 0;
 }
 .userCard dl dt {
@@ -370,68 +371,10 @@ section.portfolio {
     text-align: center;
     margin-bottom: 100px;
 }
-section.portfolio > nav > ol {
-    margin: 0 auto;
-    display: inline-block;
-    vertical-align: top;
+section.portfolio .swiper-container{
+    width: 668px;
+    height: 501px;
 }
-section.portfolio > nav > ol > li {
-    float: left;
-    margin-left: 40px;
-    cursor: pointer;
-}
-section.portfolio > nav > ol > li:nth-child(1) {
-    margin-left: 0;
-}
-section.portfolio > nav {
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 32px;
-}
-section.portfolio > nav .bar {
-    height: 5px;
-    background: white;
-    border-radius: 2px;
-    margin-top: 5px;
-    margin-bottom: 28px;
-}
-section.portfolio > nav .bar-inner {
-    height: 100%;
-    background: #e6686a;
-    border-radius: 2px;
-    transition: all 0.3s;
-}
-section.portfolio > nav .bar.state-1 .bar-inner {
-    margin-left: 0;
-    width: 50px;
-}
-section.portfolio > nav .bar.state-2 .bar-inner {
-    margin-left: 65px;
-    width: 50px;
-}
-section.portfolio > nav .bar.state-3 .bar-inner {
-    margin-left: 140px;
-    width: 96px;
-}
-section.portfolio .works {
-    position: relative;
-    height: 597px;
-}
-section.portfolio .works > .big,
-section.portfolio .works > .small,
-section.portfolio .works > .smaller {
-    position: absolute;
-}
-section.portfolio .works > .big {
-    top: 0;
-    left: 0;
-}
-section.portfolio .works > .small {
-    top: 0;
-    left: 635px;
-}
-section.portfolio .works > .smaller {
-    top: 312px;
-    left: 635px;
+section.portfolio h2{
+    margin-bottom: 32px;
 }
