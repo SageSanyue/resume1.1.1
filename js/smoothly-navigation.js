@@ -42,7 +42,7 @@
       
               let a = x.currentTarget
       
-              let href = a.getAttribute('href')   //'#siteAbout'
+              let href = a.getAttribute('href')  
               let element = document.querySelector(href)
               
               this.scrollToElement(element)
