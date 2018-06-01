@@ -1,3 +1,4 @@
+!function(){
 //添加offset类 
 let specialTags = document.querySelectorAll('[data-x]')  //含有data-x属性的任意标签
 for(let i=0;i<specialTags.length;i++){
@@ -37,3 +38,4 @@ for(let i=0;i<liTags.length;i++){
      x.currentTarget.classList.remove('active')
     }
 }
+}.call()
