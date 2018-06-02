@@ -3,36 +3,30 @@
 
     var model = Model({resourceName: 'Message'})
 
-    var controller = {
-        view: null,
-        model: null,
-        messageList: null,
-        init: function(view,model){
-            this.view = view
-            this.model = model
+    var controller = Controller({
+        init: function(view,controller){
+            
             this.messageList = view.querySelector('#messageList')
             this.form = view.querySelector('#postMessageForm')
-            this.model.initAV()
             this.loadMessages()
-            this.bindEvents()
         },
-        
         loadMessages: function(){
-           this.model.fetch()
-            .then((messages)=> {
-                let array = messages.map((item)=>item.attributes)
-                array.forEach((item) => {
-                    let li = document.createElement('li')
-                    li.innerText = `${item.name}: ${item.content}`
-                    this.messageList.appendChild(li)
-                });
-                // 成功获得实例
-            }//, function (error) {
-                //alert('提交失败，改天再来哦V_V')}// 异常处理
-            )//.then(()=>{},(error)=>{console.log(error)})
-
-        },
-        bindEvents: function(){
+            this.model.fetch()
+             .then((messages)=> {
+                 let array = messages.map((item)=>item.attributes)
+                 array.forEach((item) => {
+                     let li = document.createElement('li')
+                     li.innerText = `${item.name}: ${item.content}`
+                     this.messageList.appendChild(li)
+                 });
+                 // 成功获得实例
+             }//, function (error) {
+                 //alert('提交失败，改天再来哦V_V')}// 异常处理
+             )//.then(()=>{},(error)=>{console.log(error)})
+ 
+         },
+         bindEvents: function(){
+            console.log(this.form)
             this.form.addEventListener('submit',(e)=>{     //‘submit’包含提交按钮被点击、任意一行input打回车两个事件
                 e.preventDefault()
                 this.saveMessages()
@@ -52,10 +46,9 @@
                 /*window.location.reload()  //成功提交后自动帮用户刷新页面，但用户体验极差*/
                 //console.log(object);
             })
-        } 
-    }
+        }   
+    })
     controller.init(view,model)
-
 }.call()
 
 
