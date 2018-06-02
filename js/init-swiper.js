@@ -1,5 +1,5 @@
 !function(){
- var view = document.querySelector('#mySlides')      //MVC的V(view)
+ var view = View('#mySlides')      //MVC的V(view)
  var controller = {
      view: null,
      swiper: null,
