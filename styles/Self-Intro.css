@@ -1,5 +1,5 @@
 body {
-    background-color: #fefefe;
+    background-color: #f8fafc;
     margin: 0;
    
 }
@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 [data-x].active{
-    outline: 10px solid red;
+    outline: 10px solid #559aa4;
 }
 
 [data-x].offset{
@@ -78,8 +78,9 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 4px;
 }
 .topNavBar .logo .rs {
-    color: #e6686a;
+    color: #30c2c9;
     margin-right: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 .topNavBar .logo .card {
@@ -121,7 +122,7 @@ h1,h2,h3,h4,h5,h6 {
     position: absolute;
     top: 100%;
     left: 0;
-    background: #f94a5e;
+    background: #30c2c9;
     width: 100%;
     height: 3px;
     animation: menuSlide .3s;
@@ -183,13 +184,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 .banner {
     height: 515px;
-    background-image:url(../Resume/rs-cover.jpg);/*本css文件的父容器和该图片的父容器是同级关系，故要用..*/
+    background-image:url(../Resume/wall9.jpg);/*本css文件的父容器和该图片的父容器是同级关系，故要用..*/
     background-position: center center;
     background-size: cover;
 }
 .banner .mask {
     height: 515px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .userCard {
     background-color: #fff;
@@ -204,7 +205,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 38px;
 }
 .userCard .welcome {
-    background-color: #e6686a;
+    background-color: #adcfd3;
     color: #fff;
     display: inline-block;
     padding: 4px 16px;
@@ -218,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {
     border: 10px solid transparent;
     width:0px;
     border-top-width: 0;
-    border-left-color: #e6686a; 
+    border-left-color: #adcfd3; 
     position: absolute;
     left: 4px;
     top: 100%;   
@@ -236,6 +237,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .userCard .pictureAndText {
     padding: 50px;
+    
 }
 .userCard .text dl dd,
 .userCard .text dl dt {
@@ -252,7 +254,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #9da0a7;
 }
 .userCard > footer.media {
-    background: #e6686a;
+    background: #30c2c9;
     text-align: center;
 }
 .userCard svg {
@@ -270,7 +272,7 @@ h1,h2,h3,h4,h5,h6 {
     margin: 16px;
 }
 .userCard > footer.media > a:hover {
-    background: #cf505f;
+    background: #559aa4;
 }
 body > main {
     margin-top: -340px;
@@ -319,6 +321,7 @@ section.portfolio {
     margin-right: auto;
     margin-top: 60px;
 }
+section#others > h2,
 section.skills > h2,
 section#message > h2,
 section.portfolio > h2 {
@@ -341,14 +344,14 @@ section.skills > ol {
 }
 section.skills .progressBar {
     height: 5px;
-    background: #fae1e1;
+    background: #d1deec;
     border-radius: 2px;
     margin: 4px 0 40px;
     overflow: hidden;
 }
 section.skills .progressBar > .progress {
     height: 100%;
-    background: #e6686a;
+    background: #30c2c9;
     border-radius: 2px;
     width: 70%;
     transform: translateX(0);
@@ -444,12 +447,20 @@ section.portfolio h2{
      border: 1px solid #ebebeb;
      border-radius: 8px;
      padding: 10px 10px;
-     background-color: #ffe3d8;
+     background-color: #e1f9ff;
  }
  section#message ol li{
      padding: 16px;
-     border-bottom: 1px dotted #6fc6cf;
+     border-bottom: 1px dotted #adcfd3;
  }
  section#message .labOne{
      padding-left: 100px;
+ }
+
+ section#others{
+     width: 100%;
+     height: 100px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 90px;
  }
