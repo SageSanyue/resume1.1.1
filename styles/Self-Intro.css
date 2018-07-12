@@ -464,3 +464,13 @@ section.portfolio h2{
      margin-right: auto;
      margin-top: 90px;
  }
+
+ @media(max-width:500px){
+    section#message .labOne{
+        padding-left: 25px;
+     }
+     #postMessageForm > input{
+        width: 75px;         
+     }
+     
+ }
