@@ -44,7 +44,7 @@
                 </li>
                <li><a href="#">日历</a></li>
                <li><a href="#">联系方式</a></li>-->
-               <li><a href="#">留言</a></li>
+               <li><a href="#siteMessage">留言</a></li>
            </ul>
            </nav>  
         </div>
@@ -55,7 +55,7 @@
     </div>
     <main>
         
-            <div data-x id="siteAbout" class="userCard">
+        <div data-x id="siteAbout" class="userCard">
                 <div class="pictureAndText clearfix">
                   <div class="picture">
                     <img src="Resume/white.jpg" width=299 height=347 alt="头像">
@@ -94,124 +94,124 @@
                         <use xlink:href="#icon-weixin"></use>
                     </svg></a>
                   </footer>
-            </div>
-            <p class="downloadResume-wrapper">
-                  <a class="downloadResume" href="./resume.pdf"  target="_blank" download>下载 PDF 简历</a>
-            </p>
-            <p class="selfIntroduction">徐赛君， 前端开发工程师，2017年7月毕业于吉林大学-通信工程学院-自动化专业，工学学士。
-                    <br><span>相关证书：大学英语六级CET-6、计算机等级考试C语言程序二级（NCRE Grade 2）。</span>
-                    <br><span>技能：前端开发</span>
-            </p>
-        </main>
-          <section data-x id="siteSkills" class="skills">
-              <h2>技能</h2>
-              <ol class="clearfix">
-                  <li>
-                      <h3>HTML 5 &amp; CSS 3</h3>
-                      <div class="progressBar">
-                          <div class="progress" style="width: 80%;"></div>
-                      </div>
-                  </li>
-                  <li>
-                      <h3>JavaScript</h3>
-                      <div class="progressBar">
-                            <div class="progress"></div>
-                      </div>
-                  </li>
-                  <li>
-                      <h3>jQuery</h3>
-                      <div class="progressBar">
-                            <div class="progress" style="width: 70%;"></div>
-                      </div>
-                  </li>
-                  <li>
-                      <h3>Vue.js</h3>
-                      <div class="progressBar">
-                            <div class="progress" style="width: 70%;"></div>
-                      </div>
-                  </li>
-                  <li>
-                      <h3>React.js</h3>
-                      <div class="progressBar">
-                            <div class="progress" style="width: 60%;"></div>
-                      </div>
-                  </li>
-                  <li>
-                      <h3>Node.js</h3>
-                      <div class="progressBar">
-                            <div class="progress" style="width: 60%;"></div>
-                      </div>
-                  </li>
-              </ol>
-          </section>
-          <section data-x id="siteWorks" class="portfolio">
-            <h2>作品集</h2>
-            <!--变成轮播-->
-           <div id="mySlides">
-            <!--此处即view(MVC的M)-->
-            <!-- Slider main container -->
-            <div class="swiper-container">
-            <!-- Additional required wrapper -->
-               <div class="swiper-wrapper">
-               <!-- Slides -->
-                <img src="Resume/music.jpg" class="swiper-slide">
-                <img src="Resume/movie.jpg" class="swiper-slide">
-                <img src="Resume/canvas.jpg" class="swiper-slide">
-                
-              </div>
-              <!-- If we need pagination -->
-             
-              <div class="swiper-pagination"></div>
-              <!-- If we need navigation buttons -->
-              
-            </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-           </div> 
-          </section>
-          <section id="message">
-              <h2>留言</h2>
-              <ol id="messageList">
-                  
-              </ol>
-              <form id="postMessageForm" action="">
-                  <label class="labOne" for="">姓名</label>
-                  <input type="text" name="name">
-                  <label class="labTwo"for="">内容</label>
-                  <input type="text" name="content">
-                  <input type="submit" value="提交">
-              </form>
-          </section>
-          <section id="others">
-            <h2>其他</h2>
-            <div id="particles-js"></div>
-            <!--<div class="count-particles">
-                 <span class="js-count-particles"></span>
-                   
-            </div>-->
-          </section>
-          <script> 
-                setTimeout(function(){
-                   siteWelcome.classList.remove('active')
-                },1000)  
-          </script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
-          <!--模块化-->
-          <script src="js/base/controller.js"></script>
-          <script src="js/base/view.js"></script>
-          <script src="js/base/model.js"></script>
-          
-          <script src="js/init-swiper.js"></script>
-          <script src="js/auto-slide-up.js"></script>
-          <script src="js/sticky-topbar.js"></script>
-          <script src="js/smoothly-navigation.js"></script>
-          <!-- 存储服务 -->
-          <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.0/dist/av-min.js"></script>
-          <script src="js/message.js"></script>
+        </div>
+        <p class="downloadResume-wrapper">
+            <a class="downloadResume" href="./resume.pdf"  target="_blank" download>下载 PDF 简历</a>
+        </p>
+        <p class="selfIntroduction">徐赛君， 前端开发工程师，2017年7月毕业于吉林大学-通信工程学院-自动化专业，工学学士。
+            <br><span>相关证书：大学英语六级CET-6、计算机等级考试C语言程序二级（NCRE Grade 2）。</span>
+            <br><span>技能：前端开发</span>
+        </p>
+    </main>
+    <section data-x id="siteSkills" class="skills">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>HTML 5 &amp; CSS 3</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>React.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Node.js</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section data-x id="siteWorks" class="portfolio">
+    <h2>作品集</h2>
+    <!--变成轮播-->
+    <div id="mySlides">
+    <!--此处即view(MVC的M)-->
+    <!-- Slider main container -->
+    <div class="swiper-container">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <img src="Resume/music.jpg" class="swiper-slide">
+        <img src="Resume/movie.jpg" class="swiper-slide">
+        <img src="Resume/canvas.jpg" class="swiper-slide">
+        
+        </div>
+        <!-- If we need pagination -->
+        
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        
+    </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div> 
+    </section>
+    <section data-x id="siteMessage" class="message">
+        <h2>留言</h2>
+        <ol id="messageList">
+            
+        </ol>
+        <form id="postMessageForm" action="">
+            <label class="labOne" for="">姓名</label>
+            <input type="text" name="name">
+            <label class="labTwo"for="">内容</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+    <section id="others">
+    <h2>其他</h2>
+    <div id="particles-js">
+       
+    </div>
+    <img src="./Resume/kbLd9vb.gif" alt="">
+    </section>
+    <script>
+        setTimeout(function(){
+            siteWelcome.classList.remove('active')
+        },1000)
 
-          <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> 
-          <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-          <script src="js/app.js"></script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <!--模块化-->
+    <script src="js/base/controller.js"></script>
+    <script src="js/base/view.js"></script>
+    <script src="js/base/model.js"></script>
+    
+    <script src="js/init-swiper.js"></script>
+    <script src="js/auto-slide-up.js"></script>
+    <script src="js/sticky-topbar.js"></script>
+    <script src="js/smoothly-navigation.js"></script>
+    <!-- 存储服务 -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.0/dist/av-min.js"></script>
+    <script src="js/message.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> 
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 !function(){
-    var view = View('#message')
+    var view = View('.message')
 
     var model = Model({resourceName: 'Message'})
 

@@ -323,7 +323,7 @@ section.portfolio {
 }
 section#others > h2,
 section.skills > h2,
-section#message > h2,
+section#siteMessage > h2,
 section.portfolio > h2 {
     text-align:center;
     color: #3d4451;
@@ -441,7 +441,7 @@ section.portfolio h2{
      width: 700px;
      margin: 50px auto;
  }
- section#message ol{
+ section#siteMessage ol{
      width: 700px;
      margin: 35px auto;
      border: 1px solid #ebebeb;
@@ -449,11 +449,11 @@ section.portfolio h2{
      padding: 10px 10px;
      background-color: #e1f9ff;
  }
- section#message ol li{
+ section#siteMessage ol li{
      padding: 16px;
      border-bottom: 1px dotted #adcfd3;
  }
- section#message .labOne{
+ section#siteMessage .labOne{
      padding-left: 100px;
  }
 
@@ -466,7 +466,7 @@ section.portfolio h2{
  }
 
  @media(max-width:500px){
-    section#message .labOne{
+    section#siteMessage .labOne{
         padding-left: 25px;
      }
      #postMessageForm > input{
