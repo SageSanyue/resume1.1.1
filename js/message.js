@@ -26,7 +26,7 @@
  
          },
          bindEvents: function(){
-            console.log(this.form)
+            //console.log(this.form)
             this.form.addEventListener('submit',(e)=>{     //‘submit’包含提交按钮被点击、任意一行input打回车两个事件
                 e.preventDefault()
                 this.saveMessages()
